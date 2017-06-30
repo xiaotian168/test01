@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <mysql.h>
 
+//单条sql语句增／删／该功能
+
 int main()
 {
     //创建
