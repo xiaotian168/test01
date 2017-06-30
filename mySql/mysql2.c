@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <mysql.h>
 
+//执行多条sql的API
+
 int main()
 {
     //创建mysql变量
@@ -20,13 +22,12 @@ int main()
         return -2;
     }
 
-    char *sql = "insert into test4 values(5, '王麻子', 2); insert into test4 values(6, '张胖子', 2)";
+    char *sql = "insert into test4 values(5, '王麻子', 2); insert into test4 values(6, '张胖子', 2)";   //注意：多条语句以;分割开
     if(mysql_query(mysql, sql))
     {
         printf("query error\n");
         return -3;
     }
-
 
 
     //关闭连接
