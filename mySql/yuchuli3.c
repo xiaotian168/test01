@@ -38,6 +38,7 @@ int main()
     condition_bind.buffer_length = sizeof(condition);
     condition_bind.is_null = (my_bool*)0;
     mysql_stmt_bind_param(stmt, &condition_bind);
+    
     //初始化每个字段结构体数据
     int id;
     char name[1024];
